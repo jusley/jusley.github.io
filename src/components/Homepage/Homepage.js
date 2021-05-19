@@ -1,6 +1,12 @@
 import React from "react";
-import NavBar from './NavBar';
+import NavBar from '../NavBar';
+import Skeleton from "../Skeleton";
 
 export function Homepage(props) {
-    return <div><NavBar /></div>;
+    return (
+    <div>
+        <div><NavBar /></div>
+        <div><Skeleton/></div>
+    </div>
+    )
 }
