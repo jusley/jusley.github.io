@@ -10,6 +10,7 @@ export function NavBar(props) {
         <nav>
             <div className='navbar-header'>
 
+
             <div className='nav-logo2'>
                 <img className='nav-logo' src= {MSKlogo} alt = 'msklogo' height = "50" />
             </div>
@@ -18,10 +19,7 @@ export function NavBar(props) {
             
                 <div className='nav-button'>  
                 </div>
-                {/*
-                We will add "to="/path"" to the other buttons when we create the pages. for now they are empty
-                */}
-                
+
                 <div className="navigation">
                     <Router>
                         <Link to="/Homepage" className="nav-button">Home</Link>

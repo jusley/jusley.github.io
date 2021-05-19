@@ -1,6 +1,7 @@
 import React from 'react';
+
+import { Homepage } from './components/Homepage/Homepage';
 import MSKlogo from './MSKlogo.svg';
-import { Homepage } from './components/Homepage';
 
 
 import './App.css';
