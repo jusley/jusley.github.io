@@ -1,5 +1,7 @@
 import React from 'react';
-import {Link, BrowserRouter as Router} from 'react-router-dom';
+import Homepage from './Homepage';
+import MSKlogo from '../MSKlogo.svg';
+import {Link, BrowserRouter as Router, NavLink} from 'react-router-dom';
 import './NavBar.css';
 
 
@@ -7,13 +9,24 @@ export function NavBar(props) {
     return(
         <nav>
             <div className='navbar-header'>
-                <div className='nav-button'>Logo</div>    
+
+
+            <div className='nav-logo2'>
+                <img className='nav-logo' src= {MSKlogo} alt = 'msklogo' height = "50" />
+            </div>
+            
+            {/* <img className='nav-logo' src= {MSKlogo} alt = 'msklogo' height = "50" /> */}
+            
+                <div className='nav-button'>  
+                </div>
+
                 <div className="navigation">
                     <Router>
                         <Link to="/Homepage" className="nav-button">Home</Link>
                         <Link to="/About" className="nav-button">About</Link>
                         <Link className="nav-button">Profile</Link>
                     </Router>
+                    
                  </div>
             </div>
         </nav>
