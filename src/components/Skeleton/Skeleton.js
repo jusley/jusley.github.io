@@ -1,6 +1,6 @@
 import React from 'react';
-import SkeletonMan from '../skeleton.svg';
-import CircleButton from '../circleButton.svg';
+import SkeletonMan from './skeleton.svg';
+import CircleButton from './circleButton.svg';
 import './Skeleton.css';
 
 export function Skeleton(props) {
