@@ -8,6 +8,12 @@ export function History (props){
            
            <div><NavBar/></div>
 
+                <div class="back">
+                    <a href="/" > &#60; Back to Homepage</a>
+                </div>
+           
+           
+
            <div id="menu-id" class="menu">
                <ul>
                     <li><a href="#history">History for Knee Pain</a></li>
