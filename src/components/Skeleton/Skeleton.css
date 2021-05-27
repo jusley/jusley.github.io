@@ -9,7 +9,30 @@
 }
 .skeletonButton{
     position:absolute;
-    height:30px;
+    height:38px;
     top: -235px;
-    left: 90px;
+    left: 87px;
+}
+.sidebar-menu {
+    background-color:#2F1A45;
+    color: white;
+    width: 400px;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left:-100%;
+    transition: 850ms;
+}
+
+.sidebar-menu-active {
+    left:0;
+    transition:350ms;
+}
+.sidebar-toggle{
+    background-color:#2F1A45;
+    width:400px;
+    height:100%;
+    display:flex;
 }
