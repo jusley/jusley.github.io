@@ -8,7 +8,7 @@ export function Skeleton() {
         const showSidebar = () => setSidebar(!sidebar)
     return(
         <div>
-        <div className={sidebar ? 'sidebar-menu-active' : 'sidebar-menu'}> inactive
+        <div className={sidebar ? 'sidebar-menu-active' : 'sidebar-menu'}> 
             <div className='sidebar-toggle'></div>
         </div>
         <view className="Container">
