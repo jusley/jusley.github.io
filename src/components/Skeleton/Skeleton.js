@@ -1,21 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import SkeletonMan from './skeleton.svg';
 import CircleButton from './circleButton.svg';
 import './Skeleton.css';
 
-export function Skeleton() {
-        const [sidebar, setSidebar] = useState(false)
-        const showSidebar = () => setSidebar(!sidebar)
+export function Skeleton(props) {
     return(
-        <div>
-        <div className={sidebar ? 'sidebar-menu-active' : 'sidebar-menu'}> 
-            <div className='sidebar-toggle'></div>
-        </div>
         <view className="Container">
             <img src={SkeletonMan} alt="Skeleton" className="skeleton"/>
-            <a onClick={showSidebar}><img src={CircleButton} alt="Circle" className="skeletonButton"/></a>
+                <a href="#"><img src={CircleButton} alt="Circle" className="skeletonButton"/></a>
         </view>
-        </div>
     )
 }
+
 export default Skeleton;
+
