@@ -1,0 +1,60 @@
+@import url(https://use.typekit.net/jgr7scc.css);
+
+.Case1{
+   background-color: #635373;
+   font-family: din-2014, sans-serif;
+   font-size: 20px;
+   font-weight: 100;
+   font-style: normal;
+   color: white; 
+   margin-top: 70px;
+   margin-left: 130px;
+   margin-right:130px;
+   margin-bottom: 70px;
+   
+   padding-top: 70px;
+   padding-bottom: 70px;
+   padding-right: 50px;
+   padding-left:50px;
+
+   line-height: 1.9;
+   clear:both;
+}
+
+h1{
+    font-size: 70px; 
+    margin-bottom: -12px;
+}
+
+.textInfo{
+    float:right;
+    clear:both;
+    text-align: left;
+    margin-right: 50px;
+}
+
+#ph.wrap{
+    float:left;
+    margin: 0 15px 0 0;
+    clear:both;
+}
+
+.getstarted-button{
+  background-color: white; 
+  border: none;
+  color:black;
+  font-family: din-2014, sans-serif;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  margin-right: -80px;
+  clear:both;
+  margin-top: 70px;
+ 
+}
+
+.getstarted-button:hover{
+    background-color: #c3c3c4;
+}
