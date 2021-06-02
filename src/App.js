@@ -3,7 +3,7 @@ import React from 'react';
 import { Homepage } from './components/Homepage/Homepage';
 import { About } from './components/About/About';
 import { Profile } from './components/Profile/Profile';
-import { Case } from './components/KneeModule/Case';
+import { Case1 } from './components/Cases/KneeModule/Case1';
 import { History } from './components/History/History';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function App() {
         <Route path='/About' exact component={About} />
         <Route path='/Profile' exact component={Profile}/>
         <Route path='/' exact component={Homepage} />
-        <Route path='/Case' exact component={Case} />
+        <Route path='/Case' exact component={Case1} />
         <Route path='/History' exact component={History} />
       </Router>
     </div>

@@ -17,6 +17,9 @@
     top: -235px;
     left: 87px;
 }
+.skeletonButton:hover{
+    cursor:pointer;
+}
 .sidebar-menu {
     background-color:#2F1A45;
     color: white;
