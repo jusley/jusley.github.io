@@ -36,9 +36,11 @@ export function History (props){
                </ul>
             </div>
 
-            <section id="history">
-                <h1>History for Knee Pain</h1>
-            </section>
+            <div className="history-title">
+                <section id="history">
+                    <h1>History for Knee Pain</h1>
+                </section>
+            </div>
 
             <section id="chief">
                 <h2>Chief Complaint: Knee Pain</h2>
