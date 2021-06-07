@@ -1,6 +1,10 @@
 .founders {
     padding: 0px;
     margin-bottom:150px;
+    text-align: center;
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 35px;
   }
   
   h1 {
@@ -56,6 +60,21 @@
 
   .medical-students{
       margin-bottom:130px;
+      text-align: center;
+      font-family: din-2014, sans-serif;
+      color: #2F1A45;
+      font-size: 35px;
+  }
+
+
+  .development-team{
+    text-align: center;
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 35px;
+  }
+  
+
   }
 
   .team{
