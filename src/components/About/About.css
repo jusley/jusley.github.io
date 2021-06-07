@@ -1,0 +1,85 @@
+.founders {
+    padding: 0px;
+    margin-bottom:150px;
+    text-align: center;
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 35px;
+  }
+  
+  p {
+    color: #2F1A45 !important;
+    font-family: din-2014, sans-serif;
+    font-size: 25px !important;
+    text-align: center !important;
+  }
+  
+
+  .dot {
+    height: 300px;
+    width: 300px;
+    background-color:#2F1A45;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 120px;
+    align-items: center;
+  }
+
+  .circles{
+    margin-left:110px;
+  }
+
+  .titles{
+    margin-left: 300px;
+    white-space: nowrap;
+    text-align: center;
+    display:inline-block;
+    padding-bottom:0mm;
+    
+  }
+
+  .certs{
+      padding-top: 0%;
+      margin-top: -30px;
+      margin-left: 270px !important;
+      float:left;
+      white-space: nowrap;
+  }
+
+  .students{
+      margin-left:350px;
+      white-space: nowrap;
+  }
+
+  .medical-students{
+      margin-bottom:130px;
+      text-align: center;
+      font-family: din-2014, sans-serif;
+      color: #2F1A45;
+      font-size: 35px;
+  }
+
+
+  .development-team{
+    text-align: center;
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 35px;
+  }
+  
+  .team{
+    margin-left:320px;
+    white-space: nowrap;
+  }
+
+  .team-title{
+      margin-left:360px;
+      white-space: nowrap;
+      margin-top: -10px;
+      margin-bottom:60px;
+  }
+
+  .team2{
+    margin-left:360px;
+    white-space: nowrap;
+  }
