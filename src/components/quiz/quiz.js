@@ -7,6 +7,7 @@ import NavBar from '../Navigation Bar/NavBar';
 import './quiz.css';
 
 const Quiz = (props) =>{
+    console.log(props)
     //id of the quiz
     const id = props.match.params.id;
     const[questions,setquestions]=useState([])
