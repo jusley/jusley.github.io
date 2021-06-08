@@ -6,6 +6,7 @@ import { Profile } from './components/Profile/Profile';
 import { Case1 } from './components/Case/KneeModule/Case1';
 import { History } from './components/History/History';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Quiz from './components/quiz/quiz';
 
 
 import './App.css';
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
        <Router>
+        <Route path='/Quiz/:id' component={Quiz}/>
         <Route path='/About' exact component={About} />
         <Route path='/Profile' exact component={Profile}/>
         <Route path='/' exact component={Homepage} />
