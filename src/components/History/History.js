@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from '../Navigation Bar/NavBar';
 import './History.css';
-
  
 export function History (props){
    return(
@@ -205,6 +204,11 @@ export function History (props){
                 </p>
             </section>
 
+            {/* <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+            <script src="history.js"></script> */}
+
+            {/* const scroll = new SmoothScroll('.menu a[href*="#"]',{speed:800}); */}
+            
        </div>
       
    )
