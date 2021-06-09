@@ -45,7 +45,7 @@ const Quiz = (props) =>{
             <div className="contents">
                 <div className="contents">
                     <NavBar />
-                    <h2>
+                    <h2 className="title">
                         Post Module Quiz
                     </h2>
                     {questions && questions.map((question,index) =>{

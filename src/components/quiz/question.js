@@ -28,7 +28,7 @@ const Question = ({quiz,index}) =>{
     if(quiz.answer.length>1){
         return(
             <div className="contents">
-                    <h2>Question {index+1}</h2>
+                    <h2 className="question">Question {index+1}</h2>
                     <div className="p">{quiz.state}</div>
                     <p></p>
                     {options.map(x=>{
@@ -46,7 +46,7 @@ const Question = ({quiz,index}) =>{
     else{
         return(
             <div className="contents">
-                <h2>Question {index+1}</h2>
+                <h2 className="question">Question {index+1}</h2>
                     <div className="p">{quiz.state}</div>
                     <p></p>
                     {options.map(x=>{

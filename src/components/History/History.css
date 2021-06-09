@@ -78,11 +78,16 @@ h2{
     margin-left: 120px;
 }
 
-p{
+.chiefP,.mechP,.painP,.symptomsP,.systemicP,.impactP,.pastmedP,.medP,.socialP,.famP,.revP,.redP{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 20px;
     margin-left: 120px;
     margin-right: 620px;
     text-align: left;
+}
+
+
+section#history{
+    font-size: 45px;
 }

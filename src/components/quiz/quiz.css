@@ -2,7 +2,7 @@
     background-color:#635373;
     padding-bottom: 20px;
 }
-h2{
+.title{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 70px;
@@ -10,14 +10,14 @@ h2{
     margin-left: 120px;
 }
 
-p{
+/* p{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 20px;
     margin-left: 120px;
     margin-right: 620px;
     text-align: left;
-}
+} */
 .button {
     background-color: #635373; /* Green */
     border: 2px solid white; /* Green */;

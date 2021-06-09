@@ -7,18 +7,11 @@
     font-size: 35px;
   }
   
-  h1 {
-    text-align: center;
+  .titlesP,.certsP,.studentsP,.teamP,.teamtitleP,.team2P,.teamtitleP{
+    color: #2F1A45 ;
     font-family: din-2014, sans-serif;
-    color: #2F1A45;
-    font-size: 70px;
-  }
-  
-  p {
-    color: #2F1A45 !important;
-    font-family: din-2014, sans-serif;
-    font-size: 25px !important;
-    text-align: center !important;
+    font-size: 25px ;
+    text-align: center ;
   }
   
 
@@ -37,7 +30,7 @@
   }
 
   .titles{
-    margin-left: 300px;
+    margin-left: -50px;
     white-space: nowrap;
     text-align: center;
     display:inline-block;
@@ -48,13 +41,13 @@
   .certs{
       padding-top: 0%;
       margin-top: -30px;
-      margin-left: 270px !important;
+      margin-left: 390px ;
       float:left;
       white-space: nowrap;
   }
 
   .students{
-      margin-left:350px;
+      margin-left:45px;
       white-space: nowrap;
   }
 
@@ -73,21 +66,19 @@
     color: #2F1A45;
     font-size: 35px;
   }
-  
-
-  .team{
-    margin-left:320px;
+.team{
+    margin-left:10px;
     white-space: nowrap;
   }
 
   .team-title{
-      margin-left:360px;
+      margin-left:10px;
       white-space: nowrap;
       margin-top: -10px;
       margin-bottom:60px;
   }
 
   .team2{
-    margin-left:360px;
+    margin-left:50px;
     white-space: nowrap;
   }

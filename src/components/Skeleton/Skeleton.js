@@ -15,8 +15,6 @@ export function Skeleton() {
             <img src={SkeletonMan} alt="Skeleton" className="skeleton"/>
             <a onClick={showSidebar}><img src={CircleButton} alt="Circle" className="skeletonButton"/></a>
         </view>
-
-        
         </div>
     )
 }
