@@ -11,8 +11,9 @@
     text-decoration: none;
     font-weight:550;
     float:left;
-    margin-left: 120px;
+    margin-left: -330px;
     margin-top:50px;
+    margin-bottom:-140px;
 }
 
 .back a:hover {
@@ -90,4 +91,5 @@ h2{
 
 section#history{
     font-size: 45px;
+    margin-top:70px;
 }
