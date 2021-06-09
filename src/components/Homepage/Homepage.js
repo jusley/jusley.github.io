@@ -4,6 +4,7 @@ import Skeleton from "../Skeleton/Skeleton";
 import firebase from 'firebase';
 import 'firebase/firestore';
 import Quiz from '../quiz/quiz';
+import './Homepage.css';
 
 export function Homepage(props) {
     // /Quiz/FRurrHFbrWtNngRUKOzf
@@ -11,35 +12,20 @@ export function Homepage(props) {
     return (
     <div>
         <div><NavBar /></div>
+        <div className="welcome">
+            <h2 className="message">Welcome to the MSK <br></br>teaching module.</h2>
+            <h2 className="step1">Step 1</h2>
+            <p className="step1P">Click the button on the joint to view its related cases.</p>  
+            <h2 className="step2">Step 2</h2>
+            <p className="step2P">Choose a case, read all its information. Answer all its <br></br>questions.</p> 
+            <h2 className="step3">Step 3</h2>
+            <p className="step3P">Complete the final post module quiz to receive a grade.</p> 
+        </div>
+        
         <div><Skeleton/></div>
 
-        <div class="instructions">
-            <h1>Instructions</h1>
-
-            
-                <span class="arrow" title="arrow icon"></span>
-            
-            <div class="steps">
-                <h1>Step One &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    Step Two &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
-                    Step Three
-                </h1>
-            </div>
-
-            <div class="homepage-circles">
-                    <span class="home-circle"></span>
-                    <span class="home-circle"></span>
-                    <span class="home-circle"></span>
-            </div>
-
-            <div class="section">
-                <div>Click on the button on the join to view its <br></br>related cases.</div>
-                <div>Choose a case, read and answer all its <br></br>information and questions.</div>
-                <div>Complete the final post module quiz to <br></br>receive a grade.</div>
-            </div>
-
-
-        </div>   
+        
+        
     </div>
 
     )
