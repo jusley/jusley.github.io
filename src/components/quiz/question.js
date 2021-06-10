@@ -4,7 +4,7 @@ import './question.css'
 
 const Question = ({quiz,index}) =>{
     const options = quiz.options
-   
+    const id = quiz.id
     function handleChange3(e){
         var element = document.getElementsByName(quiz.id);
         var answer = []
