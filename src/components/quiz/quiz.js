@@ -4,6 +4,7 @@ import Question from './question';
 import {db,Readdb,check,userAnswers} from './functions';
 import 'firebase/firestore';
 import NavBar from '../Navigation Bar/NavBar';
+import ScoreBoard from '../scoreboard/scoreboard'
 import './quiz.css';
 
 const Quiz = (props) =>{
@@ -48,6 +49,7 @@ const Quiz = (props) =>{
                     <h2 className="title">
                         Post Module Quiz
                     </h2>
+                    <ScoreBoard questions={questions}/>
                     {questions && questions.map((question,index) =>{
                         questAnswers[question.id]=question.answer
                         return(
