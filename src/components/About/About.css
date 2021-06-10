@@ -8,10 +8,10 @@
   }
   
   .titlesP,.certsP,.studentsP,.teamP,.teamtitleP,.team2P,.teamtitleP{
-    color: #2F1A45 ;
+    color: #2F1A45 !important;
     font-family: din-2014, sans-serif;
-    font-size: 25px ;
-    text-align: center ;
+    font-size: 25px !important;
+    text-align: center !important;
   }
   
 
@@ -41,7 +41,7 @@
   .certs{
       padding-top: 0%;
       margin-top: -30px;
-      margin-left: 390px ;
+      margin-left: 390px !important;
       float:left;
       white-space: nowrap;
   }
