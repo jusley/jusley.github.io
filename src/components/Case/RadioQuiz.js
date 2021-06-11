@@ -1,21 +1,29 @@
-import React, {useState} from "react";
+import React, {useState, setState} from "react";
 import NavBar from '../Navigation Bar/NavBar';
 import Placeholder from './placeholder.jpeg';
 
-export function ImagePage (props) {
+export function RadioQuiz (props) {
+
+    const handleAnswerOptionClick = (isCorrect) => {
+		if (isCorrect) {
+			alert("Correct")
+		}
+        else{
+           alert("Incorrect")
+        }
+	};
     return (
     <div>
         <div><NavBar/></div>
 
-        <div className="ImagePage">
+        <div className="RadioQuizPage">
         <h1 className="Title">{props.title}</h1>
-        {props.bodyElements.map((bodyElements) => (
-            <div>
-		    <h1 className="Subtitle">{bodyElements.bodyImage}</h1>
-            <img src={bodyElements.imageURL} className="Picture" alt="place holder" max-height="500"/>
-            </div>
-	    ))}
+        <div className='answer-section'>
+	        {props.answerOptions.map((answerOption) => (
+		    <button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+	        ))}
+        </div>
         </div>
     </div>)
 }
-export default ImagePage;
+export default RadioQuiz;

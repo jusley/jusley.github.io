@@ -1,6 +1,7 @@
 import React from "react";
 import Placeholder from '../placeholder.jpeg';
 import ImagePage from '../ImagePage';
+import RadioQuiz from '../RadioQuiz';
 
 export function Case1Content(props){
 const Case1Data = [
@@ -84,13 +85,22 @@ const Case1Data = [
 ];
 
 return(
+    <>
+<RadioQuiz title="What is the most likely diagnosis?" answerOptions ={[
+    {answerText: "Degenerative medial meniscus tear", isCorrect: false},
+    {answerText: "Osteoarthritis", isCorrect: true},
+    {answerText: "Patellar tendinopathy", isCorrect: false},
+    {answerText: "Gout", isCorrect: false}
 
-<ImagePage title= "X-ray views to keep in mind" bodyElements = {[
+]}/>
+
+{/*<ImagePage title= "X-ray views to keep in mind" bodyElements = {[
             {bodyImage: "Skyline view is best to assess for patellofemoral OA:", imageURL: Placeholder},
             {bodyImage: "Tunnel view is best to look for loose bodies, femoral condyle lesions and lateral compartment OA:", imageURL: Placeholder},
             {bodyImage: "Oblique view is best to assess suspected tibial plateau fracture:", imageURL: Placeholder}
  ]} />
-
+*/}
+</>
 );
 
 }

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import NavBar from '../Navigation Bar/NavBar';
 import Placeholder from './placeholder.jpeg';
-import './ImagePage.css';
+import '../Case/Styles/ImagePage.css';
 
 export function ImagePage (props) {
     return (
