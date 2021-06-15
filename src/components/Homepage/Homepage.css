@@ -16,13 +16,13 @@
 }
 
 .step1P{
-    margin-right: 40px;
+    margin-right: 150px;
     margin-top:0px;
     font-size: 21px;
 }
 
 .step2P{
-    margin-right: 30px;
+    margin-right: 140px;
     margin-top:0px;
     margin-bottom: 10px;
     font-size: 21px;
@@ -33,5 +33,6 @@
 
 .step3P{
     margin-top:-5px;
+    margin-right:120px;
     font-size: 21px;
 }
