@@ -22,17 +22,15 @@
 
 .menu{
     background-color: #49365c;
+    position: fixed; 
+    float:right;
     width: 500px;
-    float: right;
-    margin-top: 120px;
-    margin-right: 120px;
-
+    top:0;
+    margin-top: 175px;
+    margin-left:1330px;
+    margin-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    position: sticky;
-    top: 0;
-    
 }
 
 .menu a{
@@ -41,8 +39,11 @@
     display: block;
     text-align: left;
     text-decoration: none;
-    /* font-weight: bold; */
 }
+
+.menu a:hover {
+    color: #c3c3c4;
+  }
 
 ul li {
     list-style: none; /* Remove default bullets */
@@ -57,9 +58,6 @@ ul li li {
     font-weight:lighter;
 }
 
-.menu a:hover {
-    color: #c3c3c4;
-  }
 
 section#history{
     font-family: din-2014, sans-serif;
@@ -71,7 +69,7 @@ section#history{
     margin-bottom: 100px;
 }
 
-h2{
+.header2{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 40px;
@@ -79,7 +77,8 @@ h2{
     margin-left: 120px;
 }
 
-.chiefP,.mechP,.painP,.symptomsP,.systemicP,.impactP,.pastmedP,.medP,.socialP,.famP,.revP,.redP{
+
+.paragraph{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 20px;

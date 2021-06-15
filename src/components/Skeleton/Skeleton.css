@@ -48,20 +48,16 @@
 
 } 
 
-.kneeMod{
+.kneeMod,.refMat{
     color:white;
-    margin-top:20px;
-    margin-left:180px;
+    margin-top:30px;
+    margin-left:0px;
     font-size: 45px;
-}
-
-.refMat{
-    color:white;
-    margin-left:120px;
-    font-size: 45px;
+    font-family: din-2014, sans-serif;
 }
 
 .back{
+    color:white;
     font-size: 25px;
     margin-left:450px;
     margin-top:30px;
@@ -72,9 +68,6 @@
 .back:hover{
     color:#b2a8b9;
 }
-/* .span.arrow :hover{
-    background-color:#b2a8b9;
-} */
 
 span.arrow {
     margin-top:10px;
