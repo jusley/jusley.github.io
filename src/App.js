@@ -6,6 +6,7 @@ import { Profile } from './components/Profile/Profile';
 import { Case1 } from './components/Case/KneeModule/Case1';
 import { History } from './components/History/History';
 import Quiz from './components/quiz/quiz';
+import Login from './components/login/login'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -18,6 +19,7 @@ function App() {
        <Router>
         <Route path='/About' exact component={About} />
         <Route path='/Quiz/:id' component={Quiz}/>
+        <Route path='/Login' ecaxt component={Login}/>
         <Route path='/Profile' exact component={Profile}/>
         <Route path='/' exact component={Homepage} />
         <Route path='/Case' exact component={Case1} />
