@@ -38,7 +38,7 @@ input[type='radio']:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-    margin-left: -6px;
+    margin-left: -5px;
 }
 
 input[type='radio']:checked:after {
@@ -53,7 +53,7 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-    margin-left: -6px;
+    margin-left: -5px;
 }
 input[type='checkbox']:after {
     width: 15px;
@@ -66,7 +66,7 @@ input[type='checkbox']:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-    margin-left: -6px;
+    margin-left: -5px;
 }
 
 input[type='checkbox']:checked:after {
@@ -80,5 +80,5 @@ input[type='checkbox']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-    margin-left: -6px;
+    margin-left: -5px;
 }
