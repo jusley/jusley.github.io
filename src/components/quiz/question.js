@@ -1,8 +1,11 @@
 import React , { useState } from 'react';
 import {userAnswers} from './functions';
 import './question.css'
+import { useSelector, useDispatch } from 'react-redux';
+import {add} from './quizSlice'
 
 const Question = ({quiz,index}) =>{
+    const dispatch = useDispatch();
     const options = quiz.options
     const id = quiz.id
     function handleChange3(e){
@@ -14,6 +17,7 @@ const Question = ({quiz,index}) =>{
             }
         }
         userAnswers[quiz.id]=answer
+        dispatch(add(quiz.id))
     }
     function handleChange4(e){
         var element = document.getElementsByName(quiz.id);
@@ -24,6 +28,7 @@ const Question = ({quiz,index}) =>{
             }
         }
         userAnswers[quiz.id]=answer
+        dispatch(add(quiz.id))
     }
     if(quiz.answer.length>1){
         return(
