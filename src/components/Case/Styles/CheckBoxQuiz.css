@@ -1,0 +1,12 @@
+.submitButton{
+    background-color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: din-2014, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    border: none;
+   float: right;
+}

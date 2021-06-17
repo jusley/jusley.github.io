@@ -8,7 +8,7 @@ export function ImagePage (props) {
     <div>
         <div><NavBar/></div>
 
-        <div className="ImagePage">
+        <div className="Container">
         <h1 className="Title">{props.title}</h1>
         {props.bodyElements.map((bodyElements) => (
             <div>

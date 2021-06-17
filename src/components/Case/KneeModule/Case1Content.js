@@ -2,8 +2,11 @@ import React from "react";
 import Placeholder from '../placeholder.jpeg';
 import ImagePage from '../ImagePage';
 import RadioQuiz from '../RadioQuiz';
+import CheckBoxQuiz from '../CheckBoxQuiz';
+import AnswerInfo from "../AnswerInfo";
 
 export function Case1Content(props){
+
 const Case1Data = [
     {
         type: "quiz",
@@ -87,19 +90,42 @@ const Case1Data = [
 return(
     <>
 <RadioQuiz title="What is the most likely diagnosis?" answerOptions ={[
-    {answerText: "Degenerative medial meniscus tear", isCorrect: false},
-    {answerText: "Osteoarthritis", isCorrect: true},
-    {answerText: "Patellar tendinopathy", isCorrect: false},
-    {answerText: "Gout", isCorrect: false}
+    {value: 1, answerText: "Degenerative medial meniscus tear", isCorrect: false, message: "The patient population and chronic nature of this case is in keeping with a degenerative medial meniscus tear, however there are no mechanical symptoms,  no discomfort at rest, and Thessaly and McMurray's tests are negative. A degenerative medial meniscus tear develops over years and presents in older adults without a traumatic incident. Pain with pivoting or knee twisting and knee catching or locking would be more indicative of this diagnosis. Patients often complain of baseline discomfort. There will be medial joint line tenderness on exam, but no effusion. Knee ROM may be reduced and not smooth. A positive Thessaly and McMurray test would help differentiate this from other diagnoses. Note that a degenerative meniscus tear may co-exist with osteoarthritis."},
+    {value: 2, answerText: "Osteoarthritis", isCorrect: true, message: ""},
+    {value: 3, answerText: "Patellar tendinopathy", isCorrect: false},
+    {value: 4, answerText: "Gout", isCorrect: false}
 
 ]}/>
 
-{/*<ImagePage title= "X-ray views to keep in mind" bodyElements = {[
+<RadioQuiz title="Assuming osteoarthritis exists, which investigation would be most useful?" answerOptions={[
+     {value: 1, answerText: "Bone Scan", isCorrect: false},
+     {value: 2, answerText: "AP and Lateral X-Ray right knee", isCorrect: false},
+     {value: 3, answerText: "MRI right knee", isCorrect: false},
+     {value: 4, answerText: "Standing AP and Lateral X-Ray right knee", isCorrect: true}
+]}/>
+
+<ImagePage title= "X-ray views to keep in mind" bodyElements = {[
             {bodyImage: "Skyline view is best to assess for patellofemoral OA:", imageURL: Placeholder},
             {bodyImage: "Tunnel view is best to look for loose bodies, femoral condyle lesions and lateral compartment OA:", imageURL: Placeholder},
             {bodyImage: "Oblique view is best to assess suspected tibial plateau fracture:", imageURL: Placeholder}
  ]} />
-*/}
+<RadioQuiz title= "Select all the radiographic findings seen in the X-ray." answerOptions = {[
+            {value: 1, answerText: "Medial tibiofemoral joint space narrowing", isCorrect: true},
+            {value: 2, answerText: "Lateral tibiofemoral joint space narrowing", isCorrect: false},
+            {value: 3, answerText: "Mariginal osteophytes", isCorrect: true},
+            {value: 4, answerText: "Subchondral cysts", isCorrect: true},
+            {value: 5, answerText: "Subchondral sclerosis", isCorrect: true}
+
+        ]} />
+<CheckBoxQuiz title= "Select all the radiographic findings seen in the X-ray." imageURL= {Placeholder} answerOptions = {[
+            {value: 1, answerText: "Medial tibiofemoral joint space narrowing", isCorrect: true},
+            {value: 2, answerText: "Lateral tibiofemoral joint space narrowing", isCorrect: false},
+            {value: 3, answerText: "Mariginal osteophytes", isCorrect: true},
+            {value: 4, answerText: "Subchondral cysts", isCorrect: true},
+            {value: 5, answerText: "Subchondral sclerosis", isCorrect: true}]}
+            correct={["Medial tibiofemoral joint space narrowing", "Mariginal osteophytes", "Subchondral cysts", "Subchondral sclerosis"]}/>
+
+
 </>
 );
 

@@ -194,7 +194,7 @@ export function History (props){
 
             <section id="red-flags">
                 <h2>Red Flags on History</h2>
-                <p> 1. Significant trauma and not weight bearing <br></br> <br></br>
+                <p className> 1. Significant trauma and not weight bearing <br></br> <br></br>
                     2. Hot/painful/swollen joint with little movement <br></br> <br></br>
                     3. Severe pain/progressive symptoms<br></br> <br></br>
                     4. Bony tenderness/swelling<br></br> <br></br>
