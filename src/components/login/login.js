@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import SignUp from '../SignUp/signUp';
+import { Link } from 'react-router-dom';
 import './login.css';
 class Login extends Component{
     state = {
@@ -49,7 +51,9 @@ class Login extends Component{
                             <button className="btn" id="submit">LOG IN</button>
                         </div>
                     </form>
-                    <button className="btn1" id="submit">SIGN UP</button>
+                    <Link to ='/SignUp'>
+                        <button className="btn1" id="submit">SIGN UP</button>
+                    </Link>
             </div>
         )
     }
