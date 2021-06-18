@@ -6,13 +6,11 @@ import { Profile } from './components/Profile/Profile';
 import { Case1 } from './components/Case/KneeModule/Case1';
 import { History } from './components/History/History';
 import { PhysicalExam } from './components/PhysicalExam/PhysicalExam';
+import { DifferentialDiag } from './components/Differential Diagnosis/DifferentialDiag';
 import Quiz from './components/quiz/quiz';
 import Login from './components/login/login'
 import SignUp from './components/SignUp/signUp'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
-
-
 import './App.css';
 
 function App() {
@@ -28,6 +26,7 @@ function App() {
         <Route path='/Case' exact component={Case1} />
         <Route path='/PhysicalExam' exact component={PhysicalExam} />
         <Route path='/History' exact component={History} />
+        <Route path='/DifferentialDiag' exact component={DifferentialDiag} />
       </Router>
     </div>
 

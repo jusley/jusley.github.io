@@ -14,9 +14,36 @@
     margin-top:50px;
 }
 
-.backButton a:hover {
+  .backButton a:hover {
     color: #c3c3c4;
   }
+
+  .indexId{
+    background-color:#2F1A45 ;
+    position: fixed; 
+    float:right;
+    width: 500px;
+    top:0;
+    margin-top: 175px;
+    margin-left:1330px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .indexId a{
+    padding: 8px 8px 8px 32px;
+    color: white;
+    font-weight: lighter;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+  }
+
+
+  .indexId a:hover {
+    color: #c3c3c4;
+  } 
 
   section#physicalEx{
     font-family: din-2014, sans-serif;
@@ -46,4 +73,14 @@
     margin-right: 620px;
     /* margin-top:15px; */
     text-align: left;
+  }
+
+  #video{
+    float: left;
+    margin-left:120px;
+    display:inline-block;
+  }
+
+  .quadriceps{
+    position:relative;
   }

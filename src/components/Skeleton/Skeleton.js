@@ -20,7 +20,7 @@ export function Skeleton() {
                     <h2 className="refMat">Reference Material</h2>
                     <a href="/History" className="history">History</a>
                     <a href="/PhysicalExam" className="physical">Physical Examination</a>
-                    <a href="#" className="differential">Differential Diagnosis</a>
+                    <a href="/DifferentialDiag" className="differential">Differential Diagnosis</a>
                 </div>
             </div>
             <view className="Container">
