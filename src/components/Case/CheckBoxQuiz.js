@@ -11,19 +11,22 @@ import '../Case/Styles/CheckBoxQuiz.css'
   -> if correct, display explanation component, else display popup
 */}
 
+var checkedAns = [];
+
 function onCheck(checkedValues) {
     console.log('checked = ', checkedValues);
+    checkedAns = checkedValues;
   };
- 
-  
    
   export function CheckBoxQuiz (props) {
     const [isOpen, setIsOpen] = useState(false);
- 
     const togglePopup = () => {
-      
-      setIsOpen(!isOpen);
+      console.log(checkedAns);
+      console.log(props.correct);
+      if(!(JSON.stringify(props.correct) === JSON.stringify(checkedAns))){
+      setIsOpen(!isOpen);}
     }
+
     if(props.imageURL == null)
     return (
     <>
@@ -45,7 +48,7 @@ function onCheck(checkedValues) {
       <img src={props.imageURL} className="Picture" alt="place holder" max-height="200"/>
       <Checkbox.Group options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck} />
       </div>
-      <AnswerInfo message = "<b>peepepgoepgoe \ ogepgoepg eoge pgoepg oep"/>
+      <AnswerInfo message = "I can't figure this out"/>
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       </div>
       {isOpen && <Popup
