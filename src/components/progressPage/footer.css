@@ -1,0 +1,31 @@
+.footer{
+    bottom:0;
+    position:relative;
+    height:30%;
+    border: 1px solid #2F1A45;
+    background-color: #2F1A45;
+    width:100%
+}
+.footer2{
+    right: 0;
+    text-align: left;
+    position:absolute;
+    bottom:0;
+    height:80%;
+    border: 1px solid #2F1A45;
+    background-color: #2F1A45;
+    width:80%
+    
+}
+.mainText1{
+    font-family: din-2014, sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+.secondaryText1{
+    font-family: din-2014, sans-serif;
+    color: white;
+    font-size: 20px;
+}
