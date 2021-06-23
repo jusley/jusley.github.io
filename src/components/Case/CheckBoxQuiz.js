@@ -1,9 +1,9 @@
-import { Button, Checkbox, Modal } from 'antd';
+import { Button, Checkbox, Space, Modal } from 'antd';
 import {React, useState} from "react";
 import NavBar from '../Navigation Bar/NavBar';
 import AnswerInfo from './AnswerInfo';
 import Popup from './Popup';
-import '../Case/Styles/CheckBoxQuiz.css'
+import '../Case/Styles/CheckBoxQuiz.css';
 
 {/*TODO: 
   -> add submit button that is disabled when no answers are selected. 
@@ -20,21 +20,35 @@ function onCheck(checkedValues) {
    
   export function CheckBoxQuiz (props) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isHidden, setIsHidden] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(false);
+
     const togglePopup = () => {
       console.log(checkedAns);
       console.log(props.correct);
       if(!(JSON.stringify(props.correct) === JSON.stringify(checkedAns))){
       setIsOpen(!isOpen);}
+      else{setIsHidden(!isHidden)
+      setIsDisabled(!isDisabled)}
     }
-
+    
     if(props.imageURL == null)
     return (
     <>
       <NavBar/>
       <div className="Container">
       <h1  className="Title">{props.title}</h1>
+      <Space direction="vertical">
       <Checkbox.Group options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck} />
+      </Space>
+      <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       </div>
+      {isOpen && <Popup
+      content={<>
+        {props.message}
+      </>}
+      handleClose={togglePopup}
+    />}
     </>
   )
   else{
@@ -44,20 +58,24 @@ function onCheck(checkedValues) {
     
       <div className="Container">
       <h1  className="Title">{props.title}</h1>
-      <div>
-      <img src={props.imageURL} className="Picture" alt="place holder" max-height="200"/>
-      <Checkbox.Group options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck} />
-      </div>
-      <AnswerInfo message = "I can't figure this out"/>
+      <div> <img src={props.imageURL} className="quizPicture" alt="place holder" max-height="200"/> </div>
+      <div><Checkbox.Group disabled={isDisabled} className = "CheckBoxQuiz" options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck}/> </div>
+     
+      {!isHidden && 
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
-      </div>
+      }
+     
       {isOpen && <Popup
       content={<>
-        <b>Incorrect Answer</b>
-        <p>{props.message}</p>
+        <p className = "PopupMessage">{props.message}</p>
       </>}
       handleClose={togglePopup}
     />}
+    {isHidden &&
+    <AnswerInfo message={props.message}/>
+    
+    }
+     </div>
     </>
     )
 

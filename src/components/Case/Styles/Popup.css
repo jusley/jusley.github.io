@@ -8,6 +8,12 @@
   top: 0;
   left: 0;
 }
+
+.PopupTitle{
+    color: black !important;
+    font-size: 20pt;
+    padding-left: 1%;
+}
  
 .box {
   position: relative;
@@ -25,6 +31,7 @@
  
 .close-icon {
   content: 'x';
+  color: #2F1A45 !important;
   cursor: pointer;
   position: fixed;
   right: calc(15% - 30px);
