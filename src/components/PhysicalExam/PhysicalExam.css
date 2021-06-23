@@ -1,6 +1,6 @@
 .background{
     background-color: #635373;
-    padding-bottom: 20px;
+    padding-bottom: 500px;
 }
 
 .backButton a{
@@ -78,7 +78,7 @@
   #video{
     float: left;
     margin-left:120px;
-    display:inline-block;
+    /* display:inline-block; */
   }
 
   .quadriceps{

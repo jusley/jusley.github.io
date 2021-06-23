@@ -17,7 +17,7 @@ nav{
 
 .nav-button{
     height:30px;
-    width:50px;
+    width:90px;
     padding: 0 20px;
     margin-top:30px;
     color: white;
@@ -31,7 +31,6 @@ nav{
 .nav-logo{
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(172deg) brightness(102%) contrast(101%);
     width: 100%;
-    /* margin-right: 4%; */
     display:flex;
     height:55px;
     width:100%;
