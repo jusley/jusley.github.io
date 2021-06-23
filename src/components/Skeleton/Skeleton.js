@@ -23,7 +23,7 @@ export function Skeleton() {
                     <a href="/DifferentialDiag" className="differential">Differential Diagnosis</a>
                 </div>
             </div>
-            <view className="Container">
+            <view className="ButtonContainer">
                 <img src={SkeletonMan} alt="Skeleton" className="skeleton"/>
                 <a onClick={showSidebar}><img src={CircleButton} alt="Circle" className="skeletonButton"/></a>
             </view>
