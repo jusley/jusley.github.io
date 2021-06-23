@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from '../Navigation Bar/NavBar';
-import './Case.css';
+import '../Case/Styles/Case.css';
 import Placeholder from './placeholder.jpeg';
 
 export function Case(props) {
