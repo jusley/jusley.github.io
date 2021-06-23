@@ -9,10 +9,8 @@ export function History (props){
            <div><NavBar/></div>
 
                 <div class="back">
-                    <a href="/" > &#60; Back to Homepage</a>
+                    <a href="/" > &#8810; Back to Homepage</a>
                 </div>
-           
-           
 
            <div id="menu-id" class="menu">
                <ul>
@@ -41,23 +39,23 @@ export function History (props){
             </section>
 
             <section id="chief">
-                <h2>Chief Complaint: Knee Pain</h2>
-                <p>History can provide diagnostic clues to risk stratify patients! </p>
+                <h2 className="header2">Chief Complaint: Knee Pain</h2>
+                <p className="paragraph">History can provide diagnostic clues to risk stratify patients! </p>
             </section>
 
             <section id="history-presenting">
-                <h2>History of Presenting Illness</h2>
+                <h2 className="header2">History of Presenting Illness</h2>
             </section>
 
             <section id="mechanisms">
-                <p>
+                <p className="paragraph">
                 1. <strong>Mechanism of injury </strong> (e.g. direct blow vs. foot planted vs. decelerating or stopping suddenly vs. landing from a jump vs. twisting vs. hyperextension)
                 Include ability to weight-bear following injury
                 </p>
             </section>
 
             <section id="pain">
-                <p>
+                <p className="paragraph">
                 2. <strong>Pain characteristics (“OPQRST”):</strong> <br></br>
                 <blockquote>a. Onset (rapid vs. insidious)
                     <blockquote>i. Did pain begin following an acute traumatic event or is pain delayed post activity?
@@ -93,7 +91,7 @@ export function History (props){
             </section>
 
             <section id="associated-symptoms">
-                <p>
+                <p className="paragraph">
                 3. <strong>Associated symptoms:</strong> <br></br>
                 <blockquote>a. Mechanical symptoms (e.g. popping, locking, clicking, and knee “giving way” suggest a traumatic, structural injury)
                 <blockquote>i. Often suggesting a meniscal tear <br></br>
@@ -117,7 +115,7 @@ export function History (props){
             </section>
 
             <section id="systemic-symptoms">
-                <p>
+                <p className="paragraph">
                 4. <strong>Systemic symptoms</strong> <br></br>
                 <blockquote>a. Constitutional and infectious symptoms (e.g. fever, chills, night sweats, fatigue, unintentional weight loss, or rash)<br></br><br></br>
                 b. Is there other joint involvement?<br></br><br></br>
@@ -127,7 +125,7 @@ export function History (props){
             </section>
 
             <section id="impact">
-                <p>
+                <p className="paragraph">
                 5. <strong>Impact on function</strong>
                 <blockquote>a. Effect on activity level, occupation, activities of daily living (ADLs) and instrumental activities of daily living (iADLs), etc.<br></br><br></br>
                 b. Is there nighttime awakening due to pain?
@@ -136,8 +134,8 @@ export function History (props){
             </section>            
             
             <section id="past-medical">
-                <h2>Past Medical History</h2>
-                <p> 1. Determine if there is a history of injury or surgery to the affected knee. <br></br>
+                <h2 className="header2">Past Medical History</h2>
+                <p className="paragraph"> 1. Determine if there is a history of injury or surgery to the affected knee. <br></br>
                     <blockquote> a. A past history of knee injury is the most accurate predictive risk factor for future knee injury, as a new injury could be a complication of an old or concurrent injury. 
                         <blockquote> i. For example, patellofemoral pain can develop in patients who alter their running gait due to discomfort from chronic Achilles tendinopathy. </blockquote></blockquote>
                     
@@ -154,15 +152,15 @@ export function History (props){
             </section>
 
             <section id="medications">
-                <h2>Medications</h2>
-                <p>1. Inquire about recent fluoroquinolone use, especially in combination with oral glucocorticoids, as these are associated with tendinopathy and tendon rupture.<br></br> <br></br>
+                <h2 className="header2">Medications</h2>
+                <p className="paragraph">1. Inquire about recent fluoroquinolone use, especially in combination with oral glucocorticoids, as these are associated with tendinopathy and tendon rupture.<br></br> <br></br>
                     2. What have they tried for analgesia? (including dosages and duration)
                 </p>
             </section>
 
             <section id="social">
-                <h2>Social History</h2>
-                <p> 1. Level of activity <br></br> <br></br>
+                <h2 className="header2">Social History</h2>
+                <p className="paragraph"> 1. Level of activity <br></br> <br></br>
                     2. Occupation- i.e. how injury may impact it. It may also contribute to injury.<br></br> <br></br>
                     3. Smoking- contributes to cardiovascular disease risk factors<br></br> <br></br>
                     4. Alcohol and protein consumption (gout risk factors)<br></br> <br></br>
@@ -172,15 +170,15 @@ export function History (props){
             </section>
 
             <section id="family">
-                <h2>Family History</h2>
-                <p>1. Osteoarthritis <br></br> <br></br>
+                <h2 className="header2">Family History</h2>
+                <p className="paragraph"> 1. Osteoarthritis <br></br> <br></br>
                     2. Autoimmune disease
                     </p>
             </section>
 
             <section id="review">
-                <h2>Review of System</h2>
-                <p>1. Dysuria and uveitis may suggest reactive arthritis<br></br> <br></br>
+                <h2 className="header2">Review of System</h2>
+                <p className="paragraph">1. Dysuria and uveitis may suggest reactive arthritis<br></br> <br></br>
                     2. Extra-articular manifestations of rheumatologic disease: <br></br> <br></br>
                     <blockquote>a. Dermatological: skin nodules, skin rash, mouth ulcers <br></br> <br></br>
                     b. Cardiac: chest pain <br></br> <br></br>
@@ -193,8 +191,8 @@ export function History (props){
             </section>
 
             <section id="red-flags">
-                <h2>Red Flags on History</h2>
-                <p className> 1. Significant trauma and not weight bearing <br></br> <br></br>
+                <h2 className="header2">Red Flags on History</h2>
+                <p className="paragraph"> 1. Significant trauma and not weight bearing <br></br> <br></br>
                     2. Hot/painful/swollen joint with little movement <br></br> <br></br>
                     3. Severe pain/progressive symptoms<br></br> <br></br>
                     4. Bony tenderness/swelling<br></br> <br></br>
@@ -204,11 +202,6 @@ export function History (props){
                 </p>
             </section>
 
-            {/* <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-            <script src="history.js"></script> */}
-
-            {/* const scroll = new SmoothScroll('.menu a[href*="#"]',{speed:800}); */}
-            
        </div>
       
    )

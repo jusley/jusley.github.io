@@ -1,0 +1,38 @@
+.welcome{
+    color: #2F1A45;
+    float:right;
+    font-family: din-2014, sans-serif;
+}
+
+.message,.step1,.step2,.step3{
+    color: #2F1A45;
+    white-space: nowrap;
+    margin-top:60px;
+    margin-right:160px;
+    margin-bottom:15px;
+    flex-direction: row;
+    text-align: left;
+    font-size: 50px;
+}
+
+.step1P{
+    margin-right: 150px;
+    margin-top:0px;
+    font-size: 21px;
+}
+
+.step2P{
+    margin-right: 140px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    text-align: left;
+    display: inline-block;
+
+}
+
+.step3P{
+    margin-top:-5px;
+    margin-right:120px;
+    font-size: 21px;
+}

@@ -1,0 +1,23 @@
+.buton {
+    background-color: #ffffff; /* Green */
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-right: 5px;
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: din-2014, sans-serif;
+    font-size: 20px;
+  }
+  .buton1 {
+    background-color: #7e6e8d; /* Green */
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 5px;
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: din-2014, sans-serif;
+    font-size: 20px;
+  }

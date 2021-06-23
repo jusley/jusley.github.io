@@ -1,27 +1,25 @@
-.contents {
-    background-color:#635373;
+.background{
+    background-color: #635373;
     padding-bottom: 20px;
 }
 
- .back a{
+.backButton a{
     color:white;
-    font-family: din-2014, sans-serif;
-    font-size: 25px;
-    text-align: left;
-    text-decoration: none;
-    font-weight:550;
     float:left;
-    margin-left: -330px;
+    font-family: din-2014, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:550;
+    margin-left:130px;
     margin-top:50px;
-    margin-bottom:-140px;
 }
 
-.back a:hover {
+  .backButton a:hover {
     color: #c3c3c4;
   }
 
-.menu{
-    background-color: #49365c;
+  .indexId{
+    background-color:#2F1A45 ;
     position: fixed; 
     float:right;
     width: 500px;
@@ -31,64 +29,58 @@
     margin-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+  }
 
-.menu a{
+  .indexId a{
     padding: 8px 8px 8px 32px;
     color: white;
+    font-weight: lighter;
     display: block;
     text-align: left;
     text-decoration: none;
-}
+  }
 
-.menu a:hover {
+
+  .indexId a:hover {
     color: #c3c3c4;
-  }
+  } 
 
-ul li {
-    list-style: none; /* Remove default bullets */
-    font-family: din-2014, sans-serif;
-    font-size: 23px;
-    font-weight: bold;
-  }
-
-ul li li {
-    color: black;
-    font-size: 19px;
-    font-weight:lighter;
-}
-
-
-section#history{
+  section#physicalEx{
     font-family: din-2014, sans-serif;
     color: white;
     font-style: normal;
     text-align: left;
     margin-left: 120px;
     margin-top: 140px;
-    margin-bottom: 100px;
-}
+    font-size: 40px;
+  }
 
-.header2{
+  .titleH{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 40px;
     text-align: left;
     margin-left: 120px;
-}
+    margin-top:70px;
+    margin-bottom: 0px;
+  }
 
-
-.paragraph{
+  .paragraphP{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 20px;
     margin-left: 120px;
     margin-right: 620px;
+    /* margin-top:15px; */
     text-align: left;
-}
+  }
 
+  #video{
+    float: left;
+    margin-left:120px;
+    display:inline-block;
+  }
 
-section#history{
-    font-size: 45px;
-    margin-top:70px;
-}
+  .quadriceps{
+    position:relative;
+  }
