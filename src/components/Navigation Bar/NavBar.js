@@ -21,6 +21,7 @@ export function NavBar(props) {
                     <Link exact to="/" className="nav-button">Home</Link>
                     <Link exact to="/About" className="nav-button">About</Link>
                     <Link exact to="/Profile" className="nav-button">Profile</Link>
+                    <Link exact to="/login" className="nav-button">Sign Out</Link>
                  </div>
             </div>
         </nav>

@@ -11,7 +11,7 @@ export function History (props){
                 <div class="back">
                     <a href="/" > &#8810; Back to Homepage</a>
                 </div>
-
+ 
            <div id="menu-id" class="menu">
                <ul>
                     <li><a href="#history">History for Knee Pain</a></li>
@@ -35,7 +35,7 @@ export function History (props){
             </div>
 
             <section id="history">
-                <h1>History for Knee Pain</h1>
+                <h1>History for Knee Pain</h1>  
             </section>
 
             <section id="chief">
