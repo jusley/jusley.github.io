@@ -1,0 +1,43 @@
+.mainText{
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 2.5%;
+    font-weight: bold;
+}
+.secondaryText{
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 20px;
+}
+.PMQ{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    position:relative;
+    bottom: 30%;
+    height:25%;
+    background-color: white;
+    width:100%
+}
+.column {
+    float: left;
+    width: 14%;
+    /* border: 1px solid #2F1A45; */
+}
+.column3 {
+    float: left;
+    width: 70%;
+    /* border: 1px solid #2F1A45; */
+}
+.column4 {
+    float: left;
+    width: 14%;
+    /* border: 1px solid #2F1A45; */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

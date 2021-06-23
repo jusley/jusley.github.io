@@ -1,0 +1,30 @@
+.caseStudy{
+    position:absolute;
+    bottom: 55%;
+    height:25%;
+    border: 1px solid #2F1A45;
+    background-color: white;
+    width:100%
+}
+
+.columns {
+    margin-top: 1.2%;
+    margin-left: 2.5%;
+    float: left;
+    width: auto;
+    font-family: din-2014, sans-serif;
+    color: #2F1A45;
+    font-size: 15px;
+}
+.columns1 {
+    margin-top: 1%;
+    float: left;
+    width: 90%;
+    margin-left: 10px;
+}
+.rows:after {
+    /* margin-left: 5%; */
+    content: "";
+    display: table;
+    clear: both;
+}
