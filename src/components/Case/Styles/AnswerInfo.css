@@ -1,0 +1,16 @@
+.answerinfo{
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-left: initial;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 2%;
+}
+
+.CorrectText{
+    color: black;
+    font-size: 30pt;
+    font-weight: 700;
+}
