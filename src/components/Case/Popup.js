@@ -17,7 +17,6 @@ const Popup = props => {
       return(
         <div>
         <div className="answerinfo">
-        <span className="close-icon2" onClick={props.handleClose}>x</span>
         <div className="CorrectText">Correct</div>
         <div>{props.content}</div>
         </div>

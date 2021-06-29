@@ -1,12 +1,10 @@
 import React,{Component} from "react";
 import Placeholder from '../placeholder.jpeg';
-import { useEffect, useState } from "react";
 import ImagePage from '../ImagePage';
 import TextPage from '../TextPage';
 import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
 import { Button, Radio, Input, Space } from 'antd';
-import AnswerInfo from "../AnswerInfo";
 import { selectNextPage,selectPage,selectNextOrNot } from "./kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeNext,increament,hide } from "./kneeModSlice";
@@ -14,8 +12,6 @@ import { removeNext,increament,hide } from "./kneeModSlice";
 const Case1Content = (props)=>{
     const dispatch = useDispatch();
     const page = useSelector(selectPage)
-    const nextPage = useSelector(selectNextPage)
-    const hid = useSelector(selectNextOrNot)
 
     function on_Click(e){
         dispatch(increament())
