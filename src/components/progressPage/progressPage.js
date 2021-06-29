@@ -33,7 +33,7 @@ const ProgressPage = (props) =>{
                 )
             })}
             <PostModQuizInfo N_of_Attempts={nA} Highest_Attempt={hA}/>
-            <Footer progress = {60}/>
+            <Footer progress = {80}/>
         </div>
          
     )
