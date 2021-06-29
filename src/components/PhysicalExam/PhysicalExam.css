@@ -84,3 +84,16 @@
   .quadriceps{
     position:relative;
   }
+
+  .vidPlaceholder{
+    width: 40%;
+    display:flex;
+    margin-left:6%;
+  }
+
+  .subtitleH{
+    font-family: din-2014, sans-serif;
+    color: white;
+    display: flex;
+    margin-left:6%;
+  }
