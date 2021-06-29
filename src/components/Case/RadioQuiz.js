@@ -1,15 +1,20 @@
-import React, {useState, setState} from "react";
+import React, {useState, setState,useEffect} from "react";
 import NavBar from '../Navigation Bar/NavBar';
 import Placeholder from './placeholder.jpeg';
 import { Button, Radio, Input, Space } from 'antd';
 import AnswerInfo from './AnswerInfo';
 import '../Case/Styles/RadioQuiz.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { addNext,reveal,increament } from "./KneeModule/kneeModSlice";
 import Popup from './Popup';
+import { selectNextOrNot } from "./KneeModule/kneeModSlice";
 
 var checkedAns = 1;
 
-export function RadioQuiz (props) {
-
+const RadioQuiz = (props) => {
+  const dispatch = useDispatch();
+  const hid = useSelector(selectNextOrNot)
+  console.log("radio",hid)
   const [value, setValue] = React.useState(1);
 
   const onChange = e => {
@@ -19,21 +24,30 @@ export function RadioQuiz (props) {
     console.log(checkedAns);
   };
 
-
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const [submit,setSubmit] = useState(true)
 
-  const togglePopup = () => {
+  const togglePopup = e =>{
     console.log(checkedAns);
     console.log(props.correct);
     if(props.correct != checkedAns){
     setIsOpen(!isOpen);}
-    else{setIsHidden(!isHidden)
-    setIsDisabled(!isDisabled)}
+    else{
+      setIsHidden(!isHidden)
+      setIsDisabled(!isDisabled)
+    }
   }
-
-
+  const togglePopup2 = e =>{
+    setIsHidden(!isHidden)
+    setIsDisabled(!isDisabled)
+    setSubmit(!submit)
+  }
+  const next =e =>{
+    dispatch(increament())
+    setSubmit(!submit)
+  }
 
   if(props.images == null)
   return (
@@ -53,17 +67,20 @@ export function RadioQuiz (props) {
         </Space>
         </Radio.Group>
         </div>
-        {!isHidden && 
+        {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       }
-      {isOpen && <Popup
+      {!submit &&
+      <Button  onClick={next} className="submitButton">Next</Button>
+      }
+      {isOpen && <Popup title = "Incorrect"
       content={<>
         <p>{props.message}</p>
       </>}
       handleClose={togglePopup}
     />}
     {isHidden &&
-    <AnswerInfo message={props.message}/>
+    <Popup title = "Correct" content={props.message} handleClose={togglePopup2}/>
     
     }
         </div>
@@ -92,18 +109,20 @@ export function RadioQuiz (props) {
            
             </Radio.Group>
             </div>
-            {!isHidden && 
+            {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       }
-      {isOpen && <Popup
+      {!submit &&
+      <Button  onClick={next} className="submitButton">Next</Button>
+      }
+      {isOpen && <Popup title = "Incorrect"
       content={<>
         <p>{props.message}</p>
       </>}
       handleClose={togglePopup}
     />}
     {isHidden &&
-    <AnswerInfo message={props.message}/>
-    
+    <Popup title = "Correct" content={props.message} handleClose={togglePopup2} />
     }
             </div>
             </div>
