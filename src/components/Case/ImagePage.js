@@ -1,9 +1,20 @@
 import React, {useState} from "react";
+import { Button} from 'antd';
 import NavBar from '../Navigation Bar/NavBar';
 import Placeholder from './placeholder.jpeg';
 import '../Case/Styles/ImagePage.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { addNext,reveal,increament } from "./KneeModule/kneeModSlice";
+
+
 
 export function ImagePage (props) {
+    const dispatch = useDispatch();
+    const [value, setValue] = React.useState(1);
+
+    const next =e =>{
+        dispatch(increament()) 
+      }
     return (
     <div>
         <div><NavBar/></div>
@@ -16,6 +27,7 @@ export function ImagePage (props) {
             <img src={bodyElements.imageURL} className="Picture" alt="place holder" max-height="500"/>
             </div>
 	    ))}
+        <Button  onClick={next} className="submitButton">Next</Button>
         </div>
     </div>)
 }

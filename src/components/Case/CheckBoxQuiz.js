@@ -55,15 +55,22 @@ function onCheck(checkedValues) {
       <Space direction="vertical">
       <Checkbox.Group options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck} />
       </Space>
+      {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
-      </div>
+  }
       {isOpen && <Popup title = "Incorrect"
       content={<>
-        {props.message}
+        
       </>}
       handleClose={togglePopup}
     />}
-    </>
+    {isHidden && <AnswerInfo message={props.message}/>}
+    {!submit &&
+      <Button  onClick={next} className="submitButton">Next</Button>
+      }
+      </div>
+     </>
+   
   )
   else{
     return (

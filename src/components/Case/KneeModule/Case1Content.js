@@ -66,7 +66,7 @@ message={
             {bodyImage: "Tunnel view is best to look for loose bodies, femoral condyle lesions and lateral compartment OA:", imageURL: Placeholder},
             {bodyImage: "Oblique view is best to assess suspected tibial plateau fracture:", imageURL: Placeholder}
  ]} />
- <Button  onClick={on_Click} className="submitButton">Next</Button>
+ 
             </div>
         )
     }
