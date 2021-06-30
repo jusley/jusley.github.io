@@ -19,6 +19,17 @@
     cursor: pointer;
     margin-left: -14%;
 }
+
+.skeletonButton2{
+    position:absolute;
+    display: inline;
+    padding-left: 0px;
+    height:38px;
+    top: -425px;
+    cursor: pointer;
+    margin-left: -13%;
+}
+
 .sidebar-menu {
     background-color:#2F1A45;
     color: white;
