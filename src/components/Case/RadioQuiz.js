@@ -37,14 +37,13 @@ const RadioQuiz = (props) => {
     else{
       setIsHidden(!isHidden)
       setIsDisabled(!isDisabled)
+    setSubmit(!submit)
     }
   }
-  const togglePopup2 = e =>{
+  
+  const next =e =>{
     setIsHidden(!isHidden)
     setIsDisabled(!isDisabled)
-    setSubmit(!submit)
-  }
-  const next =e =>{
     dispatch(increament())
     setSubmit(!submit)
   }
@@ -70,9 +69,6 @@ const RadioQuiz = (props) => {
         {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       }
-      {!submit &&
-      <Button  onClick={next} className="submitButton">Next</Button>
-      }
       {isOpen && <Popup title = "Incorrect"
       content={<>
         <p>{props.message}</p>
@@ -80,9 +76,11 @@ const RadioQuiz = (props) => {
       handleClose={togglePopup}
     />}
     {isHidden &&
-    <Popup title = "Correct" content={props.message} handleClose={togglePopup2}/>
-    
+    <AnswerInfo message={props.message}/>
     }
+    {!submit &&
+      <Button  onClick={next} className="submitButton2">Next</Button>
+      }
         </div>
         </div>
     </div>)
@@ -112,9 +110,6 @@ const RadioQuiz = (props) => {
             {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       }
-      {!submit &&
-      <Button  onClick={next} className="submitButton">Next</Button>
-      }
       {isOpen && <Popup title = "Incorrect"
       content={<>
         <p>{props.message}</p>
@@ -122,8 +117,11 @@ const RadioQuiz = (props) => {
       handleClose={togglePopup}
     />}
     {isHidden &&
-    <Popup title = "Correct" content={props.message} handleClose={togglePopup2} />
+    <AnswerInfo message={props.message}/>
     }
+    {!submit &&
+      <Button  onClick={next} className="submitButton">Next</Button>
+      }
             </div>
             </div>
         </div>

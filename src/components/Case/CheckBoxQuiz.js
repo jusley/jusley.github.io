@@ -33,15 +33,16 @@ function onCheck(checkedValues) {
       console.log(props.correct);
       if(!(JSON.stringify(props.correct) === JSON.stringify(checkedAns))){
       setIsOpen(!isOpen);}
-      else{setIsHidden(!isHidden)
-      setIsDisabled(!isDisabled)}
+      else{
+        setIsHidden(!isHidden)
+        setIsDisabled(!isDisabled)
+        setSubmit(!submit)
+      }
     }
-    const togglePopup2 = e =>{
+
+    const next =e =>{
       setIsHidden(!isHidden)
       setIsDisabled(!isDisabled)
-      setSubmit(!submit)
-    }
-    const next =e =>{
       dispatch(increament())
       setSubmit(!submit)
     }
@@ -77,9 +78,7 @@ function onCheck(checkedValues) {
       {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>
       }
-      {!submit &&
-      <Button  onClick={next} className="submitButton">Next</Button>
-      }
+      
      
       {isOpen && <Popup title = "Incorrect"
       content={<>
@@ -87,10 +86,10 @@ function onCheck(checkedValues) {
       </>}
       handleClose={togglePopup}
     />}
-    {isHidden &&
-     <Popup title = "Correct" content={props.message} handleClose={togglePopup2}/>
-    
-    }
+    {isHidden && <AnswerInfo message={props.message}/>}
+    {!submit &&
+      <Button  onClick={next} className="submitButton">Next</Button>
+      }
      </div>
     </>
     )
