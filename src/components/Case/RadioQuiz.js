@@ -71,7 +71,7 @@ const RadioQuiz = (props) => {
       }
       {isOpen && <Popup title = "Incorrect"
       content={<>
-        <p>{props.message}</p>
+        <p>N/A</p>
       </>}
       handleClose={togglePopup}
     />}
@@ -112,7 +112,7 @@ const RadioQuiz = (props) => {
       }
       {isOpen && <Popup title = "Incorrect"
       content={<>
-        <p>{props.message}</p>
+        <p>N/A</p>
       </>}
       handleClose={togglePopup}
     />}

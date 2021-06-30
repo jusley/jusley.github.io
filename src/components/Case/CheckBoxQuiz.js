@@ -82,7 +82,7 @@ function onCheck(checkedValues) {
      
       {isOpen && <Popup title = "Incorrect"
       content={<>
-        <p className = "PopupMessage">{props.message}</p>
+        <p className = "PopupMessage">N/A</p>
       </>}
       handleClose={togglePopup}
     />}

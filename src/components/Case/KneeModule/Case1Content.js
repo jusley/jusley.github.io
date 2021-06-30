@@ -49,6 +49,11 @@ message={<p>The most likely diagnosis is B, a knee osteoarthritis (OA).<br></br>
              {value: 4, answerText: "Standing AP and Lateral X-Ray right knee", isCorrect: true}
 ]}
 correct={4}
+message={
+   <p> D - Standing/weight bearing AP x-ray right knee is the best view to assess medial and lateral compartment narrowing in OA. <br></br> See bilateral knee OA in the following image:<br></br><br></br>
+   <img height='300' src={Placeholder}/>
+   </p>
+}
 />
             </div>
         )
@@ -74,8 +79,16 @@ correct={4}
             {value: 3, answerText: "Mariginal osteophytes", isCorrect: true},
             {value: 4, answerText: "Subchondral cysts", isCorrect: true},
             {value: 5, answerText: "Subchondral sclerosis", isCorrect: true}]}
-            correct={["Medial tibiofemoral joint space narrowing", "Mariginal osteophytes", "Subchondral cysts", "Subchondral sclerosis"]}/>
+            correct={["Medial tibiofemoral joint space narrowing", "Mariginal osteophytes", "Subchondral cysts", "Subchondral sclerosis"]}
+            message={
+                <p>
+                    Findings: Medial tibiofemoral joint space narrowing, marginal osteophytes, and subchondral sclerosis and cysts. <br></br>
+                    Note: Almost everyone &gt;65 years of age shows signs of OA on x-ray, but only 33% are symptomatic.
+
+                </p>
+            } />
             </div>
+            
         )
     }
     if (page == 4){
@@ -98,6 +111,23 @@ correct={4}
             {answerText: "All of the above", isCorrect: true}
              ]}
             correct={["All of the above"]}
+            message={<p>
+                <b>Management options for knee osteoarthritis:</b><br></br>
+                1. Analgesia (acetaminophen, NSAIDS (oral or topical), narcotics, duloxetine) <br></br>
+                2. Activity modification (low impact exercises such as cycling or aquatics and may need to limit extreme ROMs)<br></br>
+                3. Weight loss (10 lbs lost = 40 lbs less load on joint)<br></br>
+                4. Glucosamine- still controversial but it is often worth a trial.<br></br>
+                5. Physiotherapy – strengthening is beneficial<br></br>
+                6. Acupuncture - some studies showing benefit<br></br>
+                7. Bracing <br></br>
+                8. Viscosupplementation<br></br>
+                9. Platelet-rich-plasma<br></br>
+                10. Cortisone injection<br></br>
+                11. Walking aid such as cane (on opposite side)<br></br>
+                12. Partial or total knee replacement<br></br>
+                13: Arthroscopic lavage or routine debridement is no longer considered a management option. Do not refer an osteoarthritic knee for arthroscopy unless the patient has new onset catching pain indicating possible loose body. (It has been delisted by OHIP from insured services).
+</p>
+            }
     />
             </div>
         )
@@ -119,6 +149,11 @@ correct={4}
         {value: 4, answerText: "ACL custom brace", isCorrect: false}
     ]}
     correct={3}
+    messge={
+        <p>
+            Option C or the Unloader Brace (it unloads affected compartment and realigns knee joint) is the most helpful. 
+        </p>
+    }
     />
             </div>
         )

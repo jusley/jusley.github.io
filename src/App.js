@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Homepage } from './components/Homepage/Homepage';
 import { About } from './components/About/About';
-import { Profile } from './components/Profile/Profile';
 import { Case1 } from './components/Case/KneeModule/Case1';
+import { Case2 } from './components/Case/KneeModule/Case2';
 import { History } from './components/History/History';
 import  Case1Content  from './components/Case/KneeModule/Case1Content';
+import  Case2Content  from './components/Case/KneeModule/Case2Content';
 import { PhysicalExam } from './components/PhysicalExam/PhysicalExam';
 import { DifferentialDiag } from './components/Differential Diagnosis/DifferentialDiag';
 import Quiz from './components/quiz/quiz';
@@ -27,10 +28,12 @@ function App() {
         <Route path='/SignUp' ecaxt component={SignUp}/>
         <Route path='/Profile' exact component={ProgressPage}/>
         <Route path='/' exact component={Homepage} />
-        <Route path='/Case' exact component={Case1} />
+        <Route path='/Knee1Start' exact component={Case1} />
+        <Route path='/Knee2Start' exact component={Case2}/>
         <Route path='/PhysicalExam' exact component={PhysicalExam} />
         <Route path='/History' exact component={History} />
-        <Route path="/Knee" exact component={Case1Content}/>
+        <Route path="/Knee1" exact component={Case1Content}/>
+        <Route path="/Knee2" exact component={Case2Content}/>
         <Route path='/DifferentialDiag' exact component={DifferentialDiag} />
       </Router>
     </div>
