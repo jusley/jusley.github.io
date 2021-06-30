@@ -1,9 +1,10 @@
 import React,{Component} from "react";
 import Placeholder from '../placeholder.jpeg';
 import ImagePage from '../ImagePage';
-import TextPage from '../TextPage';
+import ConclusionPage from '../ConclusionPage';
 import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
+import TextPage from '../TextPage';
 import { Button, Radio, Input, Space } from 'antd';
 import { selectNextPage,selectPage,selectNextOrNot } from "./kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
@@ -149,7 +150,7 @@ message={
         {value: 4, answerText: "ACL custom brace", isCorrect: false}
     ]}
     correct={3}
-    messge={
+    message={
         <p>
             Option C or the Unloader Brace (it unloads affected compartment and realigns knee joint) is the most helpful. 
         </p>
@@ -161,7 +162,7 @@ message={
     if (page == 6){
         return(
             <div>
-                <TextPage title="Further Resources:" content={
+                <ConclusionPage title="Further Resources:" content={
     <p>
     <h1 className="Subtitle">American College of Rheumatology Management Guideline:</h1>
     https://www.rheumatology.org/Portals/0/Files/Osteoarthritis-Guideline-Early-View-2019.pdf
