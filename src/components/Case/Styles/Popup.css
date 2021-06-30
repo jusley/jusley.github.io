@@ -45,3 +45,29 @@
   border: 1px solid #999;
   font-size: 20px;
 }
+.close-icon2 {
+  content: 'x';
+  color: #2F1A45 !important;
+  cursor: pointer;
+  position: relative;
+  right:-100%;
+  top: 10%;
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+.answerinfo2{
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-left: initial;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 2%;
+}

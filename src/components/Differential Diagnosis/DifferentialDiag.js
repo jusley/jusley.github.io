@@ -21,7 +21,7 @@ export function DifferentialDiag (props){
                     <th>Treatment</th>
                 </tr>
                 <tr>
-                    <td>Acute traumatic knee pain with <br></br>significant knee swelling</td>
+                    <td rowspan="2">Acute traumatic knee pain with <br></br>significant knee swelling</td>
                     <td>ACL tear</td>
                     <td>
                         <ol>
@@ -58,7 +58,6 @@ export function DifferentialDiag (props){
                     </td>
                 </tr>
                 <tr>
-                    <td>Acute traumatic knee pain with significant knee swelling</td>
                     <td>Large meniscus tear</td>
                     <td>
                         <ol>
@@ -81,12 +80,14 @@ export function DifferentialDiag (props){
                     </td>
                     <td>
                         <ol>
+                            <li>X-ray to rule out fracture</li>
                             <li>X-ray knee series in patients &#x3e; 50 to assess for OA</li>
                             <li>MRI knee to assess tear if surgery is being considered</li>
                         </ol>
                     </td>
                     <td>
                         <ol>
+                            <li>RICE</li>
                             <li>Physio</li>
                             <li>If young and healthy with mild/no OA, referral to orthopedics to discuss surgery</li>
                             <li>If &#x3e; 50 yrs, assess for OA before referral to surgeon (those with extensive OA would not benefit from surgery)</li>

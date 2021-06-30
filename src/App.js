@@ -5,7 +5,7 @@ import { About } from './components/About/About';
 import { Profile } from './components/Profile/Profile';
 import { Case1 } from './components/Case/KneeModule/Case1';
 import { History } from './components/History/History';
-import { Case1Content } from './components/Case/KneeModule/Case1Content';
+import  Case1Content  from './components/Case/KneeModule/Case1Content';
 import { PhysicalExam } from './components/PhysicalExam/PhysicalExam';
 import { DifferentialDiag } from './components/Differential Diagnosis/DifferentialDiag';
 import Quiz from './components/quiz/quiz';
