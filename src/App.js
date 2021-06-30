@@ -4,9 +4,11 @@ import { Homepage } from './components/Homepage/Homepage';
 import { About } from './components/About/About';
 import { Case1 } from './components/Case/KneeModule/Case1';
 import { Case2 } from './components/Case/KneeModule/Case2';
-import { History } from './components/History/History';
+import { Case3 } from './components/Case/KneeModule/Case3';
 import  Case1Content  from './components/Case/KneeModule/Case1Content';
 import  Case2Content  from './components/Case/KneeModule/Case2Content';
+import  Case3Content  from './components/Case/KneeModule/Case3Content';
+import { History } from './components/History/History';
 import { PhysicalExam } from './components/PhysicalExam/PhysicalExam';
 import { DifferentialDiag } from './components/Differential Diagnosis/DifferentialDiag';
 import Quiz from './components/quiz/quiz';
@@ -30,10 +32,12 @@ function App() {
         <Route path='/' exact component={Homepage} />
         <Route path='/Knee1Start' exact component={Case1} />
         <Route path='/Knee2Start' exact component={Case2}/>
+        <Route path='/Knee3Start' exact component={Case3}/>
         <Route path='/PhysicalExam' exact component={PhysicalExam} />
         <Route path='/History' exact component={History} />
         <Route path="/Knee1" exact component={Case1Content}/>
         <Route path="/Knee2" exact component={Case2Content}/>
+        <Route path="/Knee3" exact component={Case3Content}/>
         <Route path='/DifferentialDiag' exact component={DifferentialDiag} />
       </Router>
     </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import Placeholder from '../placeholder.jpeg';
-import TextPage from '../TextPage';
+import ConclusionPage from '../ConclusionPage';
 import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
 import { Button} from 'antd';
+import TextPage from '../TextPage';
 import { selectNextPage,selectPage,selectNextOrNot } from "./kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeNext,increament,hide } from "./kneeModSlice";
@@ -222,7 +223,7 @@ Refer to orthopedic surgery for <b>operative treatment</b>: Ligament reconstruct
     if (page == 7){
         return(
             <div>
-                <TextPage title="Further Resources:" content={
+                <ConclusionPage title="Further Resources:" content={
     <p>
     
     https://www.orthobullets.com/knee-and-sports/3008/acl-tear <br></br><br></br>
