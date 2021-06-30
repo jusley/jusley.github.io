@@ -177,7 +177,9 @@ message={
     <h1 className="Subtitle">Osteoarthritis Tool for Family Physicians:</h1>
     https://www.arthritisalliance.ca/images/OA_Tool_Final_July_24_2017_ENG.pdf
     </p>
-}/>
+}
+text="Next Module"
+URL="/Knee2Start"/>
             </div>
         )
     }
