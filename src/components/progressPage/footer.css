@@ -4,7 +4,7 @@
     height:30%;
     border: 1px solid #2F1A45;
     background-color: #2F1A45;
-    width:100%
+    width:100%;
 }
 .footer2{
     right: 0;
@@ -12,8 +12,6 @@
     position:absolute;
     bottom:0;
     height:80%;
-    border: 1px solid #2F1A45;
-    background-color: #2F1A45;
     width:80%
     
 }
@@ -23,9 +21,12 @@
     font-size: 40px;
     text-align: left;
     font-weight: bold;
+    padding-left: 37%;
+    padding-top: 7%;
 }
 .secondaryText1{
     font-family: din-2014, sans-serif;
     color: white;
     font-size: 20px;
 }
+

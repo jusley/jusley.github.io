@@ -25,7 +25,7 @@ function App() {
         <Route path='/Login' ecaxt component={Login}/>
         <Route path='/ProgressPage' ecaxt component={ProgressPage}/>
         <Route path='/SignUp' ecaxt component={SignUp}/>
-        <Route path='/Profile' exact component={Profile}/>
+        <Route path='/Profile' exact component={ProgressPage}/>
         <Route path='/' exact component={Homepage} />
         <Route path='/Case' exact component={Case1} />
         <Route path='/PhysicalExam' exact component={PhysicalExam} />

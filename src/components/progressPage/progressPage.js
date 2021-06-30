@@ -11,19 +11,19 @@ const ProgressPage = (props) =>{
     // nA and hA will later be read from the user's info in our database
     const nA = 2;
     const hA = 90;
-    var cases = [{name:"case 1",progress:90},{name:"case 2",progress:60},{name:"case 3",progress:10},{name:"case 4",progress:0},{name:"case 5",progress:0}]
+    var cases = [{name:"Case 1",progress:90},{name:"Case 2",progress:60},{name:"Case 3",progress:10},{name:"Case 4",progress:0},{name:"Case 5",progress:0}]
     return(
         <div>
             <NavBar/>
             <div className="rowss1">
                 <div className="columnss1">
-                    <button className="buttonss" onClick={handleSelect}>Knee</button>
+                    <button className="buttonss" id='1' onClick={handleSelect}>Knee</button>
                 </div>
                 <div className="columnss1">
-                    <button className="buttonss" onClick={handleSelect}>Hip</button>
+                    <button className="buttonss" id='2' onClick={handleSelect}>Hip</button>
                 </div>
                 <div className="columnss1">
-                    <button className="buttonss" onClick={handleSelect}>Shoulder</button>
+                    <button className="buttonss" id='3' onClick={handleSelect}>Shoulder</button>
                 </div>
             </div>
             <p className='mainTextP'>Case Studies</p>
@@ -33,7 +33,7 @@ const ProgressPage = (props) =>{
                 )
             })}
             <PostModQuizInfo N_of_Attempts={nA} Highest_Attempt={hA}/>
-            <Footer progress = {80}/>
+            <Footer progress = {60}/>
         </div>
          
     )

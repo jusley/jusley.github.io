@@ -7,7 +7,7 @@
     font-weight: bold;
 }
 .columnss1 {
-    margin-top: 1%;
+    
     float: left;
     width: 33%;
     /* border: 1px solid #2F1A45; */
@@ -21,11 +21,13 @@
     background-color: #2F1A45; /* Green */
     border: 2px solid #2F1A45; /* Green */;
     color: white;
-    padding: 15px 35%;
-    text-align: left;
+    width: 80%;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+    padding-bottom: 1%;
+    padding-top: 1%;
     font-family: din-2014, sans-serif;
     transition-duration: 0.4s;
   }
