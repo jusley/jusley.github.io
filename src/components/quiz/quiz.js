@@ -7,6 +7,8 @@ import NavBar from '../Navigation Bar/NavBar';
 import ScoreBoard from '../scoreboard/scoreboard'
 import './quiz.css';
 
+
+
 const Quiz = (props) =>{
     console.log(props)
     //id of the quiz
@@ -16,6 +18,7 @@ const Quiz = (props) =>{
     var questAnswers = {}
 
     function handleSubmit(e){
+    
         e.preventDefault();
         var counter = 0
         const max = Object.keys(questAnswers).length
@@ -29,6 +32,7 @@ const Quiz = (props) =>{
             console.log("passed with ",total)
         }
         else{console.log("failed with ",total)}
+        window.location.href="/ProgressPage"
     }
 
     async function getquest(){

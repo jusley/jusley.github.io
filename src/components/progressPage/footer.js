@@ -24,7 +24,7 @@ const Footer = ({progress}) =>{
     }
     return(
         <div className='footer'>
-            <div style ={{width:'20%',margin: '5%', paddingLeft: '25%'}}>
+            <div style ={{width:'20%',margin: '5%', paddingLeft: '22%'}}>
                 <CircularProgressbar className = "progressCircle" value={percentage} text={`${percentage}%`} styles={{
                     path : {
                         stroke: 'white',

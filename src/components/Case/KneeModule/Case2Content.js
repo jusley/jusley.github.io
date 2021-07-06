@@ -35,7 +35,7 @@ message={<p>
         2: MCL tear- there may be soft tissue swelling, but there should be limited or absent effusion<br></br>
         3: PCL tear - moderate effusion<br></br>
         6: Fibular head or neck fracture - there may be swelling over the area of fracture, but there should be limited or absent joint effusion <br></br> <br></br>
-        See here for more details on these diagnoses: <a href="/DifferentialDiag"></a>
+        See <a href="/DifferentialDiag">here</a> for more details on these diagnoses.
 </p>
     }
 />
@@ -90,7 +90,7 @@ message={
         }
  
  />
- <Button  onClick={on_Click} className="submitButton">Next</Button>
+
             </div>
         )
     }
