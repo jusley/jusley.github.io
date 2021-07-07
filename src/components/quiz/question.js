@@ -2,7 +2,7 @@ import React , { useState } from 'react';
 import {userAnswers} from './functions';
 import './question.css'
 import { useSelector, useDispatch } from 'react-redux';
-import {add} from './quizSlice'
+import {add, remove} from './quizSlice'
 
 const Question = ({quiz,index}) =>{
     const dispatch = useDispatch();
@@ -18,6 +18,9 @@ const Question = ({quiz,index}) =>{
         }
         userAnswers[quiz.id]=answer
         dispatch(add(quiz.id))
+        if(answer.length == 0){
+            dispatch(remove(quiz.id))
+        }
     }
     function handleChange4(e){
         var element = document.getElementsByName(quiz.id);
@@ -29,6 +32,9 @@ const Question = ({quiz,index}) =>{
         }
         userAnswers[quiz.id]=answer
         dispatch(add(quiz.id))
+        if(answer.length == 0){
+            dispatch(remove(quiz.id))
+        }
     }
     if(quiz.answer.length>1){
         return(

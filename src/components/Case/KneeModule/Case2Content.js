@@ -5,11 +5,13 @@ import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
 import { Button} from 'antd';
 import TextPage from '../TextPage';
-import { selectNextPage,selectPage,selectNextOrNot } from "./kneeModSlice";
+import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
+
 import { removeNext,increament,hide } from "./kneeModSlice";
 import p1 from './knee_case2/2.jpg'
 import p2 from './knee_case2/1.jpg'
+
 
 const Case2Content = (props)=>{
     const dispatch = useDispatch();
@@ -37,7 +39,7 @@ message={<p>
         2: MCL tear- there may be soft tissue swelling, but there should be limited or absent effusion<br></br>
         3: PCL tear - moderate effusion<br></br>
         6: Fibular head or neck fracture - there may be swelling over the area of fracture, but there should be limited or absent joint effusion <br></br> <br></br>
-        See here for more details on these diagnoses: <a href="/DifferentialDiag"></a>
+        See <a href="/DifferentialDiag">here</a> for more details on these diagnoses.
 </p>
     }
 />
@@ -92,7 +94,7 @@ message={
         }
  
  />
- <Button  onClick={on_Click} className="submitButton">Next</Button>
+
             </div>
         )
     }

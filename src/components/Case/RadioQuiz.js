@@ -5,9 +5,9 @@ import { Button, Radio, Input, Space } from 'antd';
 import AnswerInfo from './AnswerInfo';
 import '../Case/Styles/RadioQuiz.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { addNext,reveal,increament } from "./KneeModule/kneeModSlice";
+import { addNext,reveal,increament } from "./kneeModSlice";
 import Popup from './Popup';
-import { selectNextOrNot } from "./KneeModule/kneeModSlice";
+import { selectNextOrNot } from "./kneeModSlice";
 
 var checkedAns = 1;
 

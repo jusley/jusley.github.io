@@ -5,10 +5,10 @@ import TextPage from '../TextPage';
 import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
 import { Button, Radio, Input, Space } from 'antd';
-import { selectPage} from "./kneeModSlice";
+import { selectPage} from "../kneeModSlice";
 import ConclusionPage from '../ConclusionPage';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeNext,increament,hide } from "./kneeModSlice";
+import { removeNext,increament,hide } from "../kneeModSlice";
 
 const Case3Content = (props)=>{
     const dispatch = useDispatch();

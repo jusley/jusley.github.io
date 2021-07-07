@@ -6,8 +6,9 @@ import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
 import TextPage from '../TextPage';
 import { Button, Radio, Input, Space } from 'antd';
-import { selectNextPage,selectPage,selectNextOrNot } from "./kneeModSlice";
+import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
+
 import { removeNext,increament,hide } from "./kneeModSlice";
 import p1 from './Knee_case1/1.jpg'
 import p2 from './Knee_case1/2.jpg'
@@ -17,6 +18,7 @@ import patella from './Knee_case1/patella.jpg'
 import unload from './Knee_case1/unload.jpg'
 import osteo from './Knee_case1/osteo.png'
 import tunnel from './Knee_case1/tunnel.jpg'
+
 
 const Case1Content = (props)=>{
     const dispatch = useDispatch();
