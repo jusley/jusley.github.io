@@ -8,7 +8,7 @@ import TextPage from '../TextPage';
 import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
 
-import { removeNext,increament,hide } from "./kneeModSlice";
+import { removeNext,increament,hide } from "../kneeModSlice";
 import p1 from './knee_case2/2.jpg'
 import p2 from './knee_case2/1.jpg'
 
