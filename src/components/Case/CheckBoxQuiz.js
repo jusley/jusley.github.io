@@ -4,7 +4,7 @@ import NavBar from '../Navigation Bar/NavBar';
 import AnswerInfo from './AnswerInfo';
 import Popup from './Popup';
 import { useSelector, useDispatch } from 'react-redux';
-import { addNext,reveal,increament } from "./KneeModule/kneeModSlice";
+import { addNext,reveal,increament } from "./kneeModSlice";
 import '../Case/Styles/CheckBoxQuiz.css';
 
 {/*TODO: 
@@ -53,7 +53,7 @@ function onCheck(checkedValues) {
       <div className="Container">
       <h1  className="Title">{props.title}</h1>
       <Space direction="vertical">
-      <Checkbox.Group options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck} />
+      <Checkbox.Group disabled={isDisabled} options={props.answerOptions.map(option=>option.answerText)} onChange={onCheck} />
       </Space>
       {!isHidden && submit &&
       <Button  onClick={togglePopup} className="submitButton">Submit</Button>

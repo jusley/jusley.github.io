@@ -36,9 +36,9 @@ export function Skeleton() {
                 <div className='sidebar-toggle'>
                 <a onClick={showSidebarHip}><h2 className="back"> &#8810;  Back</h2></a>
                     <h2 className="kneeMod">Hip Module</h2>
-                    <a href="#" className="Case1">Case 1</a>
-                    <a href="#" className="Case2">Case 2</a>
-                    <a href="#" className="Case3">Case 3</a>
+                    <a href="/Hip1Start" className="Case1">Case 1</a>
+                    <a href="/Hip2Start" className="Case2">Case 2</a>
+                    <a href="/Hip3Start" className="Case3">Case 3</a>
                     <h2 className="refMat">Reference Material</h2>
                     <a href="/History" className="history">History</a>
                     <a href="/PhysicalExam" className="physical">Physical Examination</a>

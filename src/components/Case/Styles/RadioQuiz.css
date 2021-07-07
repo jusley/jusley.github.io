@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+.linkStyle{
+  color:#d2bee6
+}
+
 .quizPicture{
     margin: auto;
     display: block;

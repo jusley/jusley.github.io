@@ -6,9 +6,9 @@ import RadioQuiz from '../RadioQuiz';
 import CheckBoxQuiz from '../CheckBoxQuiz';
 import TextPage from '../TextPage';
 import { Button, Radio, Input, Space } from 'antd';
-import { selectNextPage,selectPage,selectNextOrNot } from "./kneeModSlice";
+import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
-import { removeNext,increament,hide } from "./kneeModSlice";
+import { removeNext,increament,hide } from "../kneeModSlice";
 
 const Case1Content = (props)=>{
     const dispatch = useDispatch();

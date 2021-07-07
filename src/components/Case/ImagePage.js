@@ -4,7 +4,7 @@ import NavBar from '../Navigation Bar/NavBar';
 import Placeholder from './placeholder.jpeg';
 import '../Case/Styles/ImagePage.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { addNext,reveal,increament } from "./KneeModule/kneeModSlice";
+import { addNext,reveal,increament } from "./kneeModSlice";
 
 
 
