@@ -6,6 +6,8 @@ import 'firebase/firestore';
 import NavBar from '../Navigation Bar/NavBar';
 import ScoreBoard from '../scoreboard/scoreboard'
 import './quiz.css';
+import ProgressPage from '../progressPage/progressPage';
+import {Link} from 'react-router-dom';
 
 
 

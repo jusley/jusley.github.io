@@ -8,7 +8,17 @@ import TextPage from '../TextPage';
 import { Button, Radio, Input, Space } from 'antd';
 import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
-import { removeNext,increament,hide } from "../kneeModSlice";
+
+import { removeNext,increament,hide } from "./kneeModSlice";
+import p1 from './Knee_case1/1.jpg'
+import p2 from './Knee_case1/2.jpg'
+import acl from './Knee_case1/acl.jpg'
+import aircast from './Knee_case1/aircast.jpg'
+import patella from './Knee_case1/patella.jpg'
+import unload from './Knee_case1/unload.jpg'
+import osteo from './Knee_case1/osteo.png'
+import tunnel from './Knee_case1/tunnel.jpg'
+
 
 const Case1Content = (props)=>{
     const dispatch = useDispatch();
@@ -52,7 +62,7 @@ message={<p>The most likely diagnosis is B, a knee osteoarthritis (OA).<br></br>
 correct={4}
 message={
    <p> D - Standing/weight bearing AP x-ray right knee is the best view to assess medial and lateral compartment narrowing in OA. <br></br> See bilateral knee OA in the following image:<br></br><br></br>
-   <img height='300' src={Placeholder}/>
+   <img height='300' src={osteo}/>
    </p>
 }
 />
@@ -63,9 +73,9 @@ message={
         return(
             <div>
                 <ImagePage title= "X-ray views to keep in mind" bodyElements = {[
-            {bodyImage: "Skyline view is best to assess for patellofemoral OA:", imageURL: Placeholder},
-            {bodyImage: "Tunnel view is best to look for loose bodies, femoral condyle lesions and lateral compartment OA:", imageURL: Placeholder},
-            {bodyImage: "Oblique view is best to assess suspected tibial plateau fracture:", imageURL: Placeholder}
+            {bodyImage: "Skyline view is best to assess for patellofemoral OA:", imageURL: p1},
+            {bodyImage: "Tunnel view is best to look for loose bodies, femoral condyle lesions and lateral compartment OA:", imageURL: tunnel},
+            {bodyImage: "Oblique view is best to assess suspected tibial plateau fracture:", imageURL: p2}
  ]} />
  
             </div>
@@ -138,10 +148,10 @@ message={
             <div>
                 <RadioQuiz title = "Which type of brace would be most helpful for unicompartmental osteoarthritis?" 
     images = {[
-        {src: Placeholder},
-        {src: Placeholder},
-        {src: Placeholder},
-        {src: Placeholder}
+        {src: aircast},
+        {src: patella},
+        {src: unload},
+        {src: acl}
     ]}
     answerOptions={[
         {value: 1, answerText: "Air Cast Walker", isCorrect: false},

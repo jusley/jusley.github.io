@@ -7,7 +7,11 @@ import { Button} from 'antd';
 import TextPage from '../TextPage';
 import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
-import { removeNext,increament,hide } from "../kneeModSlice";
+
+import { removeNext,increament,hide } from "./kneeModSlice";
+import p1 from './knee_case2/2.jpg'
+import p2 from './knee_case2/1.jpg'
+
 
 const Case2Content = (props)=>{
     const dispatch = useDispatch();
@@ -163,12 +167,12 @@ message={
     message={
         <p>
             Segond avulsion fracture is pathognomonic for an ACL tear.<br></br>
-            <img height='300' src={Placeholder}/><br></br>
+            <img height='300' src={p1}/><br></br>
             <small>Case courtesy of Dr Hani Makky Al Salam, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/10536">rID: 10536</a></small>
             <br></br>Explanation: The segond fracture is highly associated with ACL tears, however the exact pathology of this fracture is still debated. The postero-lateral subluxation of the knee occurs with an ACL tear. This may result in an avulsion fracture of lateral tibia due to traction on the lateral capsular ligament, fibres of the iliotibial tract (ITT) , the anterior oblique band (AOB), and/or the Anterolateral ligament (ALL).
 
             <br></br><br></br>Note: A deep sulcus (terminalis) sign can be seen in an ACL tear. This represents depression on the lateral femoral condyle at the terminal sulcus, a junction between the weight bearing tibial articular surface and the patellar articular surface of the femoral condyle. 
-            <img height='300' src={Placeholder}/><br></br>
+            <img height='300' src={p2}/><br></br>
             <small> <br></br>
             Roberts CC, Towers JD, Spangehl MJ et-al. Advanced MR imaging of the cruciate ligaments. Radiol. Clin. North Am. 2007;45 (6): 1003-16, vi-vii. doi:10.1016/j.rcl.2007.08.007 - Pubmed citation
             <br></br>Bertrand Sonnery-Cottet, Matthew Daggett, Jean-Marie Fayard, Andrea Ferretti, Camilo Partezani Helito, Martin Lind, Edoardo Monaco, Vitor Barion Castro de Pádua, Mathieu Thaunat, Adrian Wilson, Stefano Zaffagnini, Jacco Zijl, Steven Claes. Anterolateral Ligament Expert Group consensus paper on the management of internal rotation and instability of the anterior cruciate ligament - deficient knee. (2017) Journal of Orthopaedics and Traumatology. 18 (2): 91. doi:10.1007/s10195-017-0449-8 - Pubmed</small>

@@ -11,7 +11,7 @@ export const kneeSlice = createSlice({
     initialState,
     reducers:{
         increament:(state)=>{
-            if(state.page <=5){
+            if(state.page <=6){
                 state.page += 1
             }
         },
