@@ -4,13 +4,13 @@ import NavBar from '../Navigation Bar/NavBar'
 import PostModQuizInfo from './postModQuizInfo'
 import Footer from './footer'
 import Case from './caseStudy'
-const ProgressPage = (resulat) =>{
+const ProgressPage = (props) =>{
     function handleSelect(e){
 
     }
     // nA and hA will later be read from the user's info in our database
     const nA = 2;
-    const hA = resulat;
+    const hA = 90;
     var cases = [{name:"Case 1",progress:90},{name:"Case 2",progress:60},{name:"Case 3",progress:10},{name:"Case 4",progress:0},{name:"Case 5",progress:0}]
     return(
         <div>

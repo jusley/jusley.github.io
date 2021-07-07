@@ -20,7 +20,6 @@ const Quiz = (props) =>{
     var questAnswers = {}
 
     function handleSubmit(e){
-    
         e.preventDefault();
         var counter = 0
         const max = Object.keys(questAnswers).length

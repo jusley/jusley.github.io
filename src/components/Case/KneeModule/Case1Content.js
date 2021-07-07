@@ -9,7 +9,7 @@ import { Button, Radio, Input, Space } from 'antd';
 import { selectNextPage,selectPage,selectNextOrNot } from "../kneeModSlice";
 import { useSelector, useDispatch } from 'react-redux';
 
-import { removeNext,increament,hide } from "./kneeModSlice";
+import { removeNext,increament,hide } from "../kneeModSlice";
 import p1 from './Knee_case1/1.jpg'
 import p2 from './Knee_case1/2.jpg'
 import acl from './Knee_case1/acl.jpg'
